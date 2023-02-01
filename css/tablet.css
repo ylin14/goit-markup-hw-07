@@ -1,0 +1,211 @@
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    header {
+        padding-bottom: 0px;
+    }
+
+    .header-none,
+     .cotacts-list {
+    display: block;
+}
+
+.header-flex .navigation-list {
+    display: flex;
+}
+.navigation-list {
+margin-left: 76px;
+
+font-weight: 600;
+font-size: 16px;
+line-height: 1.5;
+}
+
+.navigation-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.navigation-link {
+    position: relative;`
+    display: block;
+    padding-bottom: 24px;
+    
+
+    color:var(--dark);
+    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.current::after {
+    position: absolute;
+    bottom: 0; 
+
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: rgba(64, 75, 191, 1);
+    border-radius: 2px;
+}
+
+.navigation-link:hover, 
+.navigation-link:focus {
+    color: var(--primary-brand);
+}
+
+.cotacts-item:nth-child(2n-1) {
+    margin-right: 40px;
+}
+
+.contacts-link {
+    color: var(--text);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-link:hover, 
+.contacts-link:focus {
+    color: var(--primary-brand)
+}
+
+.hamb-menu-open, .humb-menu-modal {
+    display: none;
+}
+
+/* HERO */
+
+.hero {
+    padding-top: 112px;
+    padding-bottom: 108px;
+}
+
+    .hero-header {
+        width: 494px;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+    }
+
+    .hero.dark {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+        ), url(../images/hero-bg-tablet.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero.dark {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+        ), url(../images/hero-bg-tablet-2x.jpg);
+    }
+  }
+
+  .modal {
+    width: 408px;
+    }
+
+    /* PRINCIPLES */
+
+    .principles-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+    .principles-item {
+        width: 356px;
+    }
+
+    .principles-item-header {
+        text-align: left;
+    }
+    .principles-item-paragraph {
+        margin-bottom: 0;
+    }
+
+    /* TEAM */
+    .team {
+        padding-top: 96px;
+        padding-bottom: 104px;
+    }
+    
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 24px;
+        row-gap: 64px;
+    }
+    .team-item {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    /* CUSTOMERS */
+
+    .customers-item {
+        width: 168px;
+    }
+
+    .customers-list {
+        column-gap: 24px;
+    }
+
+    /* FOOTER */
+
+    .container.footer {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .footer-tablet {
+        display: flex;
+        justify-content: center;
+        column-gap: 24px;
+        margin-bottom: 72px;
+    }
+
+    .footer-logo {
+        margin: 0;
+    }
+
+    .footer-logo-link {
+        text-align: start;
+    }
+
+    .footer-header.social {
+        margin: 0;
+        margin-bottom: 16px;
+        text-align: start;
+    }
+
+    .subscribe-form {
+        margin-left: 118px;
+    }
+
+    .sub-email {
+        width: 264px;
+        margin-bottom: 0;
+    }
+
+    .disp-footer-form {
+        display: flex;
+    }
+
+    .btn-form {
+        margin: 0 0 0 24px;
+    }
+
+
+
+}

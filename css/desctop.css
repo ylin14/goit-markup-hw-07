@@ -1,0 +1,145 @@
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1160px;
+    }
+
+    .header-none,
+     .cotacts-list {
+    display: flex;
+}
+
+header {
+    padding-bottom: 24px;
+}
+
+    /* HERO */
+
+    .hero {
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+
+    .hero.dark {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+        ), url(../images/people-office.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero.dark {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+      ), url(../images/people-office-2x.jpg);
+  }
+}
+
+        /* PRINCIPLES */
+
+        .principles {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+
+    .principles-list {
+        flex-wrap: nowrap;
+    }
+
+    .principles-item {
+        width: 264px;
+    }
+
+    .principles-center {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--light);
+
+        margin-bottom: 8px;
+    
+        width: 264px;
+        height: 112px; 
+    }
+
+    .principles-item-header {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .principles-item-paragraph {
+        font-weight: 400;
+    }
+
+    /* SERVICES */
+
+    .services {
+        display: block;
+        padding-bottom: 120px;
+    }
+    .services-header {
+        text-align: center;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 1.11;
+        color:var(--dark);
+    }
+    
+    .services-list {
+        display: flex;
+        margin-top: 72px;
+    }
+    
+    .services-item:not(:last-child) {
+        margin-right: 24px;
+    }
+
+    /* TEAM */
+    .team {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .team-list {
+        display: flex;
+        margin-top: 72px;
+        text-align: center;
+    }
+
+    /* CUSTOMERS */
+    .customers {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    
+    .customers-list {
+    flex-wrap: nowrap;
+    }
+
+    /* FOOTER */
+    footer {
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+
+    
+    .container.footer {
+        display: flex;
+    }
+    
+    .footer-logo {
+        margin-right: 100px;
+        width: 264px;
+    }
+
+    .subscribe-form {
+        margin-left: 80px;
+    }
+
+    .footer-tablet {
+        margin-bottom: 0;
+    }
+}
